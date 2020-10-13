@@ -1,0 +1,245 @@
+/* Color Theme Swatches in Hex */
+.Interaction-1-hex {
+  color: #26151B;
+}
+
+.Interaction-2-hex {
+  color: #38A67E;
+}
+
+.Interaction-3-hex {
+  color: #6DF2C1;
+}
+
+.Interaction-4-hex {
+  color: #5EBF9B;
+}
+
+.Interaction-5-hex {
+  color: #4C7364;
+}
+
+/* Color Theme Swatches in RGBA */
+.Interaction-1-rgba {
+  color: #26151b;
+}
+
+.Interaction-2-rgba {
+  color: #38a57d;
+}
+
+.Interaction-3-rgba {
+  color: #6df2c1;
+}
+
+.Interaction-4-rgba {
+  color: #5dbf9b;
+}
+
+.Interaction-5-rgba {
+  color: #4b7264;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper header {
+  position: relative;
+}
+
+.wrapper header .menue {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #4C7364;
+  width: 100vw;
+  height: 8em;
+}
+
+.wrapper header .menue .logo img {
+  height: 4.5em;
+}
+
+.wrapper header .menue .menue-items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper header .menue .menue-items ul a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 0 1em;
+  color: white;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+.wrapper header .menue .menue-items ul a:hover {
+  color: #3c3c3c;
+}
+
+.wrapper header .menue .menue-items ul .active {
+  color: #3c3c3c;
+}
+
+.wrapper header .menue .menue-items .icon {
+  display: none;
+}
+
+.wrapper header .carousel {
+  margin-top: 8em;
+}
+
+.wrapper main .general-roofing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.25em;
+  color: white;
+  background-color: rgba(75, 114, 100, 0.9);
+}
+
+.wrapper main .general-roofing .new-roofing, .wrapper main .general-roofing .re-roofing {
+  width: 25em;
+  background-color: #4C7364;
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 5em 0;
+}
+
+.wrapper main .general-roofing .new-roofing a, .wrapper main .general-roofing .re-roofing a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+.wrapper main .general-roofing .new-roofing a i, .wrapper main .general-roofing .re-roofing a i {
+  margin-left: 1em;
+}
+
+.wrapper main .general-roofing .new-roofing a:hover, .wrapper main .general-roofing .re-roofing a:hover {
+  color: #3c3c3c;
+}
+
+.wrapper main .roofing-article {
+  width: 50vw;
+  margin: 3em auto;
+  color: #3c3c3c;
+}
+
+.wrapper main .roofing-article h1 {
+  font-weight: 700;
+}
+
+.wrapper main .roofing-article .get-in-touch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper main .roofing-article .get-in-touch ul {
+  margin: 0 2em;
+}
+
+.wrapper main .roofing-article .get-in-touch ul li {
+  list-style-type: disc;
+}
+
+.wrapper main .roofing-article img {
+  margin-left: 2em;
+}
+
+.wrapper footer {
+  width: 100vw;
+  background-color: #4C7364;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper footer .footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  padding: 3em 1em;
+  color: white;
+  letter-spacing: .15em;
+}
+
+.wrapper footer .footer h6 {
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+.wrapper footer .footer span {
+  font-weight: 700;
+}
+
+.wrapper footer .social-media {
+  text-align: center;
+}
+
+.wrapper footer .social-media a {
+  font-size: 2em;
+  margin: .4em;
+  color: white;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+.wrapper footer .social-media a:hover {
+  color: #3c3c3c;
+}
+
+.new_roofing {
+  background-image: url("img/RoofMe-roof.jpg");
+}
+
+.new_roofing main {
+  background-color: rgba(75, 114, 100, 0.9);
+  height: auto;
+  padding-bottom: 4em;
+}
+
+.new_roofing main .roofing-article {
+  color: white;
+}
+
+.new_roofing main .roofing-article h1 {
+  padding-top: 4em;
+  color: #3c3c3c;
+}
+/*# sourceMappingURL=style.css.map */

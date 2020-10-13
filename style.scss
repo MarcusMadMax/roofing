@@ -1,0 +1,206 @@
+/* Color Theme Swatches in Hex */
+.Interaction-1-hex { color: #26151B; }
+.Interaction-2-hex { color: #38A67E; }
+.Interaction-3-hex { color: #6DF2C1; }
+.Interaction-4-hex { color: #5EBF9B; }
+.Interaction-5-hex { color: #4C7364; }
+
+/* Color Theme Swatches in RGBA */
+.Interaction-1-rgba { color: rgba(38, 21, 27, 1); }
+.Interaction-2-rgba { color: rgba(56, 165, 125, 1); }
+.Interaction-3-rgba { color: rgba(109, 242, 193, 1); }
+.Interaction-4-rgba { color: rgba(93, 191, 155, 1); }
+.Interaction-5-rgba { color: rgba(75, 114, 100, 1); }
+
+$grey-color: rgba(60, 60, 60, 1);
+$light-color: rgba(255, 255, 255, 1);
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper{
+    position: relative;
+
+    header{
+        position: relative;
+
+        .menue{
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2em;
+            box-sizing: border-box;
+            background-color: #4C7364;
+            width: 100vw;
+            height: 8em;
+
+            .logo{
+
+                img{
+                height: 4.5em;
+                }
+            }
+
+            .menue-items{
+
+                ul{
+                    display: flex;
+
+                    a{
+                        text-decoration: none;
+                        font-weight: 700;
+                        font-size: 1.5em;
+                        margin: 0 1em;
+                        color: $light-color;
+                        transition: ease-in-out .5s;
+                    }
+
+                    a:hover{
+                        color: $grey-color;
+                    }
+
+                    .active{
+                        color: $grey-color;
+                    }
+                }
+
+                .icon{
+                    display: none;
+                }
+            }
+        }
+
+        .carousel{
+            margin-top: 8em;
+        }
+    }
+
+    main{
+
+        .general-roofing{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 1.25em;
+            color: $light-color;
+            background-color: rgba(75, 114, 100, .9);
+
+                .new-roofing, .re-roofing{
+                    width: 25em;
+                    background-color: #4C7364;
+                    padding: 2em;
+                    box-sizing: border-box;
+                    margin: 5em 0;
+
+
+                    a{
+                        text-decoration: none;
+                        color: $light-color;
+                        transition: ease-in-out .5s;
+
+                        i{
+                        margin-left: 1em;
+                        }
+                    }
+
+                    a:hover{
+                        color: $grey-color;
+                    }
+                }
+        }
+
+        .roofing-article{
+            width: 50vw;
+            margin: 3em auto;
+            color: $grey-color;
+
+            h1{
+                font-weight: 700;
+            }
+
+            .get-in-touch{
+                display: flex;
+
+                ul{
+                    margin: 0 2em;
+                    li{
+                        list-style-type: disc;
+                    }
+                }
+            }
+
+            img{
+                margin-left: 2em;
+            }
+        }
+    }
+
+    footer{
+        width: 100vw;
+        background-color: #4C7364;
+        display: flex;
+        justify-content: space-around;
+
+        .footer{
+            flex: 0 0 25%;
+            padding: 3em 1em;
+            color: $light-color;
+            letter-spacing: .15em;
+
+            h6{
+                font-weight: 700;
+                color: $grey-color;
+            }
+
+            span{
+                font-weight: 700;
+            }
+        }
+
+        .social-media{
+            text-align: center;
+    
+            a{
+                font-size: 2em;
+                margin: .4em;
+                color: $light-color;
+                transition: ease-in-out .5s;
+            }
+    
+            a:hover{
+                color: $grey-color;
+            }
+    
+        }
+    }
+}
+
+.new_roofing{
+    background-image: url('img/RoofMe-roof.jpg');
+
+    main{
+        background-color: rgba(75, 114, 100, .9);
+        height: auto;
+        padding-bottom: 4em;
+
+        .roofing-article{
+            color: $light-color;
+
+
+            h1{
+                padding-top: 4em;
+                color: $grey-color;
+            }
+        }
+    }
+}
