@@ -55,6 +55,24 @@ body {
   position: relative;
 }
 
+.wrapper .carousel {
+  height: 100%;
+}
+
+.wrapper .carousel ol {
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapper .carousel ol li {
+  background-color: #3c3c3c;
+}
+
+.wrapper .carousel .carousel-control-next-icon, .wrapper .carousel .carousel-control-prev-icon {
+  width: 50px;
+  height: 50px;
+}
+
 .wrapper header {
   position: relative;
 }
@@ -178,6 +196,8 @@ body {
 
 .wrapper main .roofing-article img {
   margin-left: 2em;
+  width: 10em;
+  height: 10em;
 }
 
 .wrapper footer {
@@ -224,22 +244,96 @@ body {
   color: #3c3c3c;
 }
 
-.new_roofing {
+.new_roofing, .re_roofing {
   background-image: url("img/RoofMe-roof.jpg");
 }
 
-.new_roofing main {
-  background-color: rgba(75, 114, 100, 0.9);
+.new_roofing main, .re_roofing main {
   height: auto;
-  padding-bottom: 4em;
 }
 
-.new_roofing main .roofing-article {
+.new_roofing main .roofing-article, .re_roofing main .roofing-article {
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  background-color: rgba(75, 114, 100, 0.9);
   color: white;
+  padding: 8em  14em;
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.new_roofing main .roofing-article h1 {
-  padding-top: 4em;
+.new_roofing main .roofing-article h1, .re_roofing main .roofing-article h1 {
   color: #3c3c3c;
+}
+
+.new_roofing main .roofing-images, .re_roofing main .roofing-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #26151B;
+}
+
+.new_roofing main .roofing-images img, .re_roofing main .roofing-images img {
+  width: 50vw;
+}
+
+.testimonials main .roofing-testimonials, .contact main .roofing-testimonials, .home main .roofing-testimonials {
+  width: 50vw;
+  margin: 10em auto 0 auto;
+}
+
+.testimonials main .roofing-testimonials h1, .contact main .roofing-testimonials h1, .home main .roofing-testimonials h1 {
+  color: #3c3c3c;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.testimonials main .roofing-testimonials p span, .contact main .roofing-testimonials p span, .home main .roofing-testimonials p span {
+  font-weight: 700;
+  line-height: 3em;
+}
+
+.testimonials .testimonials-slider, .contact .testimonials-slider, .home .testimonials-slider {
+  position: relative;
+  background-color: #5EBF9B;
+  width: 100vw;
+  height: 18em;
+  margin-top: 2em;
+}
+
+.testimonials .testimonials-slider .carousel-inner, .contact .testimonials-slider .carousel-inner, .home .testimonials-slider .carousel-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: bottom;
+      -ms-flex-align: bottom;
+          align-items: bottom;
+}
+
+.testimonials .testimonials-slider .carousel-inner .carousel-item, .testimonials .testimonials-slider .carousel-inner .active, .contact .testimonials-slider .carousel-inner .carousel-item, .contact .testimonials-slider .carousel-inner .active, .home .testimonials-slider .carousel-inner .carousel-item, .home .testimonials-slider .carousel-inner .active {
+  background-color: #5EBF9B;
+  margin: 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80vw;
+          flex: 0 0 80vw;
+}
+
+.testimonials .testimonials-slider .carousel-inner .carousel-item p, .testimonials .testimonials-slider .carousel-inner .active p, .contact .testimonials-slider .carousel-inner .carousel-item p, .contact .testimonials-slider .carousel-inner .active p, .home .testimonials-slider .carousel-inner .carousel-item p, .home .testimonials-slider .carousel-inner .active p {
+  margin: 0;
+  padding: 3em;
+}
+
+.testimonials .testimonials-slider .carousel-inner .carousel-item span, .testimonials .testimonials-slider .carousel-inner .active span, .contact .testimonials-slider .carousel-inner .carousel-item span, .contact .testimonials-slider .carousel-inner .active span, .home .testimonials-slider .carousel-inner .carousel-item span, .home .testimonials-slider .carousel-inner .active span {
+  font-weight: 700;
+  line-height: 3em;
+}
+
+.contact main form {
+  width: 50vw;
+  margin: 2em auto;
 }
 /*# sourceMappingURL=style.css.map */

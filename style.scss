@@ -29,6 +29,25 @@ body{
 .wrapper{
     position: relative;
 
+    .carousel{
+
+        height: 100%;
+
+        ol{
+            position: absolute;
+            bottom: 0;
+
+            li{
+            background-color: $grey-color;
+            }
+        }
+
+        .carousel-control-next-icon, .carousel-control-prev-icon{
+            width: 50px;
+            height: 50px;
+        }
+    }
+
     header{
         position: relative;
 
@@ -141,6 +160,8 @@ body{
 
             img{
                 margin-left: 2em;
+                width: 10em;
+                height: 10em;
             }
         }
     }
@@ -185,22 +206,98 @@ body{
     }
 }
 
-.new_roofing{
+.new_roofing, .re_roofing{
     background-image: url('img/RoofMe-roof.jpg');
 
     main{
-        background-color: rgba(75, 114, 100, .9);
         height: auto;
-        padding-bottom: 4em;
 
         .roofing-article{
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+            background-color: rgba(75, 114, 100, .9);
             color: $light-color;
-
+            padding: 8em  14em;
+            width: 80%;
+            box-sizing: border-box;
 
             h1{
-                padding-top: 4em;
                 color: $grey-color;
             }
+        }
+
+        .roofing-images{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #26151B;
+
+             img{
+                 width: 50vw;
+             }
+        }
+    }
+}
+
+.testimonials, .contact, .home{
+
+    main{
+
+        .roofing-testimonials{
+            width: 50vw;
+            margin: 10em auto 0 auto;
+
+            h1{
+                color: $grey-color;
+                font-size: 2em;
+                font-weight: 700;
+                margin-bottom: 1em;
+            }   
+
+            p{
+                span{
+                    font-weight: 700;
+                    line-height: 3em;
+                }
+            }
+        }
+    }
+
+    .testimonials-slider{
+        position: relative;
+        background-color: #5EBF9B;
+        width: 100vw;
+        height: 18em;
+        margin-top: 2em;
+
+        .carousel-inner{
+            display: flex;
+            align-items: bottom;
+
+            .carousel-item, .active{
+                background-color: #5EBF9B;
+                margin: 0 auto;
+                flex: 0 0 80vw;
+
+                p{
+                    margin: 0;
+                    padding: 3em;
+                }
+
+                span{
+                    font-weight: 700;
+                    line-height: 3em;
+                }
+            }
+        }
+    }
+}
+
+.contact{
+
+    main{
+
+        form{
+            width: 50vw;
+            margin: 2em auto;
         }
     }
 }
